@@ -1,0 +1,4 @@
+applicationType,resourceType,resourceName,eventName
+delivery,s3file,/partner1/data.txt,Partner1 Data
+delivery,s3file,/partner2/data.txt,Partner2 Data
+webapp,restart,production,Production Restart

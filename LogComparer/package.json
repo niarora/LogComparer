@@ -1,0 +1,13 @@
+{
+  "name": "log-comparer",
+  "version": "0.0.0",
+  "description": "LogComparer",
+  "main": "app.js",
+  "author": {
+    "name": "niarora",
+    "email": ""
+  },
+  "dependencies": {
+    "csv-parse": "^1.1.3"
+  }
+}

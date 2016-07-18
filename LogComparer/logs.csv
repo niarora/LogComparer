@@ -1,0 +1,7 @@
+applicationType,resourceType,resourceName
+delivery,s3file,/partner1/data.txt
+delivery,s3file,/partner2/data.txt
+delivery,s3file,/partner3/data.txt
+webapp,restart,production
+webapp,restart,staging
+delivery,s3file,/partner1/data.txt
