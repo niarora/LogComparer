@@ -43,7 +43,7 @@ export class Matcher {
                 if (hashValue) {
                     if (hashValue[log.resourceName]) {
                         isMatched = true;
-                        var event = hashValue[log.resourceName];
+                        const event = hashValue[log.resourceName];
                         if (!event.isPushed) {
                             event.isPushed = true;
                             event.data = {
@@ -62,7 +62,7 @@ export class Matcher {
                 unmatched.push(log);
             }            
         });
-        var results = matched;
+        const results = matched;
         results.push({ unmatchedLogEntries: unmatched });
         return results;
     }

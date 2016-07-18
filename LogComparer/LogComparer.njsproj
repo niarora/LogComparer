@@ -35,7 +35,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="package.json" />
-    <Content Include="README.md" />
     <TypeScriptCompile Include="app.ts" />
     <TypeScriptCompile Include="Model\IBaseEntry .ts" />
     <TypeScriptCompile Include="Model\ILogEntry.ts" />

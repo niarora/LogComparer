@@ -5,10 +5,11 @@ import telemetry = require('../Util/Telemetry');
 
 export class CsvReader {
     // Assumes csv files to be encoded as 'utf8'.
+    // The first improvement should be to make readAndParse Async.
     readAndParse<T>(fullPath: string): T[] {
-        var results = [];
+        let results = [];
         try {
-            var fileData = fs.readFileSync(fullPath, 'utf8');
+            const fileData = fs.readFileSync(fullPath, 'utf8');
             results = this.processFile(fileData);
         } catch (error) {
             telemetry.Telemetry.logEror(error);
@@ -18,9 +19,9 @@ export class CsvReader {
     }
 
     private processFile<T>(data: string): T[] {
-        var options: csvTypes.options = {};
+        const options: csvTypes.options = {};
         options.columns = true;
-        var results = parse(data, options);
+        const results = parse(data, options);
         return results;
     }
 }
