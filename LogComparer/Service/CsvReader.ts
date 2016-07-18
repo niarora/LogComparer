@@ -5,7 +5,8 @@ import telemetry = require('../Util/Telemetry');
 
 export class CsvReader {
     // Assumes csv files to be encoded as 'utf8'.
-    // The first improvement should be to make readAndParse Async.
+    // Keeping the file IO Synchronous for simplicity.
+    // This should be updated to use 'callbacks'.
     readAndParse<T>(fullPath: string): T[] {
         let results = [];
         try {
